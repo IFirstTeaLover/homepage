@@ -1,0 +1,58 @@
+button{
+    background-color: aquamarine;
+    border-radius: 10px;
+    font-family: fantasy;
+    font-size: x-large;
+    margin: 10px 115px;
+    padding: 5px 80px 5px 80px;
+    text-align: center;
+}
+h1{
+    background-color: skyblue;
+    border-radius: 10px;
+    color: rgb(237, 241, 7);
+    font-family: cursive;
+    text-align: center;
+    border-color: yellowgreen;
+    margin: 12px 20px;
+}
+img{
+    border-radius: 25px 25px 50px 50px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+html{
+    background-color: rgb(44, 44, 44);
+}
+
+a{
+    
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-family: cursive;
+    font-size: xx-large;
+    padding: 0 125.5px 0 125.5px;
+    text-decoration: none;    
+}
+.link2{
+    margin: 10px 0 10px 0;
+    border-radius: 0;
+    padding: 0 126.5px 0 126.5px;
+}
+.link3{
+    margin: 10px 0 10px 0;
+    border-radius: 0;
+    padding: 0 136.5px 0 136.5px;
+}
+.link4{
+    margin: 10px 0 10px 0;
+    border-radius: 0;
+    padding: 0 93px 0 92px;
+}
+.link5{
+    margin: 10px 0 10px 0;
+    border-radius: 0 0 15px 15px;
+    padding: 0 111.5px 0 111.5px;
+}

@@ -1,55 +1,36 @@
-button{
-    background-color: aquamarine;
-    border-radius: 10px;
-    font-size: x-large;
-    margin: 10px 115px;
-    padding: 5px 80px 5px 80px;
-    text-align: center;
+img {
+ border-radius: 30px;
 }
-h1{
-    background-color: skyblue;
-    border-radius: 10px;
-    color: rgb(237, 241, 7);
-    text-align: center;
-    border-color: yellowgreen;
-    margin: 12px 20px;
+h2 {
+ font-size: 18px;
 }
-img{
-    border-radius: 25px 25px 50px 50px;
-    margin: 10px 0 0 0;
-    text-align: center;
+body {
+  background: linear-gradient(to left ,rgb(255, 42, 42),rgb(42, 255, 42),rgb(42, 42, 255));
+ font-family: Trebuchet MS;
+ color: white;
+ text-align: center;
 }
-html{
-    background-color: rgb(44, 44, 44);
+a {
+ background-color: white;
+ font-size: 20px;
+ border-radius: 10px;
+ padding: 10px;
+ display: block;
+ text-align: center;
+ margin: 10px;
+ color: rgb(15, 15, 15);
+ text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0,0,0.3);
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+ font-size: 35px;
 }
-
-a{
-    
-    background-color: rgb(25, 25, 25);
-    color: white;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    font-size: xx-large;
-    padding: 0 125.5px 0 125.5px;
-    text-decoration: none;    
+a:hover{
+  color: white;
+  background-color: rgb(15,15,15);
+  transform: scale(1.02);
 }
-.link2{
-    margin: 10px 0 10px 0;
-    border-radius: 0;
-    padding: 0 126.5px 0 126.5px;
-}
-.link3{
-    margin: 10px 0 10px 0;
-    border-radius: 0;
-    padding: 0 136.5px 0 136.5px;
-}
-.link4{
-    margin: 10px 0 10px 0;
-    border-radius: 0;
-    padding: 0 93px 0 92px;
-}
-.link5{
-    margin: 10px 0 10px 0;
-    border-radius: 0 0 15px 15px;
-    padding: 0 111.5px 0 111.5px;
+@keyframes bounce{      
+  40%{transform: translateX(0);}
+  60%{transform: translateX(0);}
+  0%, 20%, 50%, 80%, 100%{transform: translateX(0);}
 }

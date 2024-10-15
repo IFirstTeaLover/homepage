@@ -16,6 +16,7 @@ function u1() {//upgrade 1 buying
     upg1cost = Math.round(upg1cost*1.1)
     document.getElementById('text').innerText = count;
     document.getElementById('upg1').innerText = "Better click    Cost="+upg1cost;}}
+else{ins()}
 
         function u2() {//upgrade 2 buying
   if(count >= upg2cost){
@@ -24,7 +25,8 @@ function u1() {//upgrade 1 buying
     upg2cost = Math.round(upg2cost*1.1)
     document.getElementById('text').innerText = count;
     document.getElementById('upg2').innerText = "Passive income    Cost="+upg2cost;
-
+else{ins()}
+      
     }}
 
     function u3() {//upgrade 3 buying
@@ -34,7 +36,8 @@ function u1() {//upgrade 1 buying
     upg3cost = Math.round(upg3cost*1.1)
     document.getElementById('text').innerText = count;
     document.getElementById('upg3').innerText = "10 times better click    Cost="+upg3cost;}}
-    
+else{ins()}
+
   function u4() {//upgrade 4 buying
     if(count >= upg4cost){
       count-=upg4cost;
@@ -42,6 +45,7 @@ function u1() {//upgrade 1 buying
       upg4cost = Math.round(upg4cost*1.1)
       document.getElementById('text').innerText = count;
       document.getElementById('upg4').innerText = "10 times better passive income    Cost="+upg4cost;}}
+else{ins()}
 
       setInterval(() => {//setting width for buttons and adding persecond value
         count = count+persec;
@@ -52,4 +56,7 @@ function u1() {//upgrade 1 buying
       function setWidth() {
         document.documentElement.style.setProperty('--width', Math.round(globalThis.outerWidth/5.5));// if more links then change that
         document.documentElement.style.setProperty('--upgradewidth', Math.round(globalThis.outerWidth/5.5));}// if more upgrades then change that
-  
+
+function ins(){
+    alert("youre too poor for that!")
+}

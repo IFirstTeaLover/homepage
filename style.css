@@ -1,5 +1,5 @@
 :root {
-  --logo-color-1: #cc0000; /* Replace with your actual logo colors */
+  --logo-color-1: #cc0000;
   --logo-color-2: #5663F1;
   --logo-color-3: #F8AA36;
   --logo-color-4: #4D9D57;
@@ -12,7 +12,7 @@ img {
     font-size: 18px;
    }
    body {
-     background: linear-gradient(gray, black);
+     background: #2E2E2E;
     font-family: Trebuchet MS;
     color: white;
     text-align: center;

@@ -1,0 +1,142 @@
+.click{
+    color: rgb(255, 255, 255);
+    background-color: rgb(133, 133, 133);
+   }
+   .clicker{
+    margin-top: 100px;
+   }
+   .upg{
+    overflow-x: hidden;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    width: 50vw;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    padding: 1vw;
+    opacity: var(--vis);
+    pointer-events: var(--pointer);
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+   }
+   .click-button {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('click.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    top: 50vh;
+    right: 50vw;
+  }
+  p{
+    font-size: xx-large;
+  }
+  .click-button:hover{
+    transform: scale(1.05);
+  }
+  .click-button:active{
+    transform: scale(0.95);
+  }
+  .shopButton{
+    position: fixed;
+    left: 0;
+    top: 40vh;
+    padding: 40px;
+  }
+  .upg::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        140deg,
+        rgb(52, 131, 215),          /* Starting color (first stripe) */
+        rgb(75, 140, 210) 5%,       /* Ending color of the first stripe */
+        rgb(40, 100, 212) 5%,       /* Starting color of the second stripe */
+        rgb(24, 78, 178) 10%       /* Ending color of the second stripe */
+    );
+    background-size: 200% 100%;  /* Adjust background size for scrolling */
+    font-family: Trebuchet MS;
+    color: white;
+    text-align: center;
+    animation: scrollBackground 30s linear infinite;
+  }
+  
+  @keyframes scrollBackground {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+  }
+  
+    #upg1,#upg2,#upg3,#upg4,#upg5,#upg6,#upg7,#upg8,#upg9,#upg10{
+      width: 50vw;
+      height: 5vw;
+      font-size: larger;
+      background-color: rgb(70, 70, 70);
+      color: rgb(229, 229, 229);
+       text-align: center;
+       padding: 10px 100px;
+       border: none;
+       box-shadow: 0 4px 8px rgba(0, 0,0,0.2);
+       border-radius: 10px;
+       margin-top: 10px;
+       transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+       cursor: pointer;
+       font-family: "Roboto Mono", monospace;
+       font-optical-sizing: auto;
+       font-weight: 400;
+       font-style: normal;
+     }
+     .shopButton{
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      width: 10vw;
+      height: 20vh;
+      text-align: center;
+      background: url('shopIcon.png') no-repeat center center;
+      background-color: rgb(234, 234, 234);
+      background-size: 100%;
+      transition: transform 0.1s cubic-bezier(0.22,0.61,0.36,1);
+     }
+     .shopButton:hover{
+      transform: scale(1.05);
+     }
+     .shopButton:active{
+      transform: scale(0.95);
+     }
+     html,body{
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    span{
+      position: absolute;
+      margin-top: -15vh;
+      font-size: larger;
+      font-family: "Roboto Mono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      left: 50vw;
+    }
+    .backmon{
+      position: absolute;
+      left: 50vw;
+      background-color: green;
+      padding: 30px 75px;
+    }

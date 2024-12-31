@@ -95,7 +95,6 @@ const links = [
 ];
 
 function GetDefault() {
-destroyDefault()
   const btn = document.getElementById("btn");
   
   links.forEach((link, index) => {
@@ -143,3 +142,4 @@ const squarelink = document.getElementById('sqrl')
 squarelink.addEventListener("input", function(){
   square = 1 - square
 })
+destroyDefault()

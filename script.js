@@ -7,40 +7,9 @@ setInterval(() => {
   clickedIcon = localStorage.getItem("icon")
   }, 100);
   
-const realExt = [
-  ".com", 
-  ".net", 
-  ".org", 
-  ".edu", 
-  ".gov", 
-  ".mil", 
-  ".info", 
-  ".biz", 
-  ".app", 
-  ".dev", 
-  ".tech", 
-  ".shop", 
-  ".store", 
-  ".site", 
-  ".online", 
-  ".xyz", 
-  ".club", 
-  ".blog", 
-  ".design", 
-  ".live", 
-  ".pro", 
-  ".guru", 
-  ".agency",
-  ".finance", 
-  ".media", 
-  ".marketing",
-  ".photography",
-]
 
-var GShow = localStorage.getItem("GShow")
 var device = localStorage.getItem("device");
-const userLanguage = navigator.language || navigator.userLanguage;
-console.log("The user's language is:", userLanguage);
+
 
 function setWidth() {
   document.documentElement.style.setProperty('--height', Math.round(globalThis.outerHeight/15));
@@ -64,28 +33,7 @@ slider.addEventListener("input", function() {
     localStorage.setItem("rows", rows);
     setWidth()
 });
-const GOOGLEBAR = document.getElementById('SEARCH')
-const isgoogleshow = document.getElementById('gglesrch')
-isgoogleshow.addEventListener("input", function(){
-if (isgoogleshow.checked){
-  localStorage.setItem("GShow",1)
-  checkhaha()
-}else{
-  localStorage.setItem("GShow",0)
-  checkhaha()
-}
-})
-function checkhaha(){
-  GShow = localStorage.getItem("GShow")
-  if (GShow == 1){
-    document.documentElement.style.setProperty("--isshaw",1)
-    document.documentElement.style.setProperty("--isscan","all")
-  }else{
-    document.documentElement.style.setProperty("--isshaw",0)
-    document.documentElement.style.setProperty("--isscan","none")
-  }
-}
-checkhaha()
+
 
 var settings = 1
 function settingas(){
@@ -223,8 +171,6 @@ squarelink.addEventListener("input", function(){
 })
 
 
-console.log(realExt)
-
 document.addEventListener("DOMContentLoaded", () => {
 window.AddCustom = AddCustom;
 })
@@ -240,25 +186,7 @@ function AddCustom(){
 
   cname = nameBox.value;
   clink = linkBox.value;
-  const containsValidExtension = realExt.some(ext => clink.includes(ext));
-  console.log(containsValidExtension)
-
-  if (clink.includes("https://")){
-    if(containsValidExtension){
       Links.push({ href: clink, icon: clickedIcon, name: cname },);
       localStorage.setItem('CstLnk',JSON.stringify(Links))
       destroyCustom();
-      GetCustom();}else{
-        alert("Please, include right domain extension.")
-    }
- }else{
-    alert("Please, include https:// in your link.")
- }
-
-}
-
-
-
-
-
-console.log("func was called")
+      GetCustom();}

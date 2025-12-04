@@ -13,7 +13,7 @@ function checkDeviceTypeWithUserAgent() {
     } else if (userAgent.includes('tablet') || userAgent.includes('ipad')) {
         return 'tablet';
     } else {
-        return 'desktop';
+        return 'desktop'; 
     }
 }
 function checkLoop(){

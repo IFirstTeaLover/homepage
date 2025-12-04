@@ -19,26 +19,18 @@ function setWidth() {
   if (device === 'mobile') {
     document.documentElement.style.setProperty('--width', Math.round(globalThis.outerWidth/0.45));
   } else {
-    document.documentElement.style.setProperty('--width', Math.round(globalThis.outerWidth/rows));
+    document.documentElement.style.setProperty('--width', Math.round(globalThis.outerWidth/6));
   }
 }
-const slider = document.getElementById('linksPerRow');
-var rows = slider.value
-slider.value = localStorage.getItem("rows");
-rows = slider.value
+
+document.documentElement.style.setProperty("--settingsA",0);
+document.documentElement.style.setProperty("--settingsB","none");
 
 
-slider.addEventListener("input", function() {
-    rows = slider.value
-    localStorage.setItem("rows", rows);
-    setWidth()
-});
-
-
-var settings = 1
+var settings = true
 function settingas(){
-  settings = 1 - settings
-  if(settings == 1){
+  settings = !settings
+  if(settings){
     document.documentElement.style.setProperty("--settingsA",1)
     document.documentElement.style.setProperty("--settingsB","all")
   }else{
@@ -162,12 +154,6 @@ if (abababa == 1) {
 custom.addEventListener("input", function(){
   location.reload()
   custom1()
-})
-
-var square = 0
-const squarelink = document.getElementById('sqrl')
-squarelink.addEventListener("input", function(){
-  square = 1 - square
 })
 
 

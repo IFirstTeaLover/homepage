@@ -47,7 +47,8 @@ a {
 .icon7:hover,
 .icon8:hover {
   color: white;
-  transition: color 0.35s;
+
+
   transform: scale(1.05);
 
   i {
@@ -65,6 +66,7 @@ a {
 .icon8 {
   color: rgb(9, 9, 9);
   box-shadow: 0 8px 16px rgba(126, 122, 122, 0.1);
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -93,35 +95,51 @@ i {
 }
 
 .icon1:hover {
+  box-shadow: 0 4px 16px var(--logo-color-1);
+  border: 3px solid var(--logo-color-1);
   background-color: var(--logo-color-1);
 }
 
 .icon2:hover {
   background-color: var(--logo-color-2);
+  box-shadow: 0 4px 16px var(--logo-color-2);
+  border: 3px solid var(--logo-color-2);
 }
 
 .icon3:hover {
   background-color: var(--logo-color-3);
+  box-shadow: 0 4px 16px var(--logo-color-3);
+  border: 3px solid var(--logo-color-3);
 }
 
 .icon4:hover {
   background-color: var(--logo-color-4);
+  box-shadow: 0 4px 16px var(--logo-color-4);
+  border: 3px solid var(--logo-color-4);
 }
 
 .icon5:hover {
   background-color: var(--logo-color-5);
+  box-shadow: 0 4px 16px var(--logo-color-5);
+  border: 3px solid var(--logo-color-5);
 }
 
 .icon6:hover {
   background-color: var(--logo-color-6);
+  box-shadow: 0 4px 16px var(--logo-color-6);
+  border: 3px solid var(--logo-color-6);
 }
 
 .icon7:hover {
   background-color: var(--logo-color-7);
+  box-shadow: 0 4px 16px var(--logo-color-7);
+  border: 3px solid var(--logo-color-7);
 }
 
 .icon8:hover {
   background-color: var(--logo-color-8);
+  box-shadow: 0 4px 16px var(--logo-color-8);
+  border: 3px solid var(--logo-color-8);
 }
 
 
@@ -175,30 +193,29 @@ i {
   opacity: var(--settingsA);
   pointer-events: var(--settingsB);
   display: flex;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(19, 17, 17);
   width: 75vw;
   height: 75vh;
   position: fixed;
-  border-radius: 20px;
+  border-radius: 13px;
+  border: 3px solid black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 0.15s ease-in, transform 0.15s ease-out;
-  /* Smooth appearance */
+  transition: opacity 0.1s ease-in, transform 0.15s ease-out;
+  box-shadow: 0 0 16px 2px rgb(14, 12, 12);
 }
 
 #settings {
   display: flex;
-  background-color: rgb(63, 63, 63);
+  background-color: rgb(33, 31, 31);
   width: var(--height);
   height: var(--height);
   position: fixed;
   border-radius: 10px;
-  bottom: 12vh;
-  /* Distance from the bottom edge */
+  bottom: 1vh;
   right: 1vw;
-  /* Distance from the right edge */
-  border: none;
+  border: 3px solid black;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: large;
@@ -213,8 +230,9 @@ i {
 #textOne {
   position: fixed;
   left: 1vw;
+  top: -1vh;
   /* Distance from the left edge */
-  color: rgb(94, 94, 94);
+  color: rgb(255, 255, 255);
 }
 
 #linksPerRow {
@@ -249,36 +267,18 @@ i {
 #textFour {
   position: fixed;
   left: 1vw;
-  /* Distance from the left edge */
   top: 12vh;
-  /* Distance from the bottom edge */
   color: rgb(94, 94, 94);
 }
 
-#gglesrch {
-  position: fixed;
-  right: 1vw;
-  /* Distance from the left edge */
-  top: 2.5vh;
-  /* Distance from the bottom edge */
-  z-index: 1000;
-  /* Ensures it stays on top of other content */
-  padding: 10px;
-  transform: scale(1.5);
-  /* Scales the checkbox by 1.5 times */
-}
 
 #custom {
   position: fixed;
-  right: 1vw;
-  /* Distance from the left edge */
-  top: 10.5vh;
-  /* Distance from the bottom edge */
+  left: 15vw;
+  top: 1.5vh;
   z-index: 1000;
-  /* Ensures it stays on top of other content */
   padding: 10px;
   transform: scale(1.5);
-  /* Scales the checkbox by 1.5 times */
 }
 
 #sqrl {
